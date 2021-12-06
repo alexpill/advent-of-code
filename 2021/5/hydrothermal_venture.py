@@ -1,4 +1,3 @@
-INPUT_FILE_SMALL = f"{__file__.replace('.py', '_input_small.txt')}"
 INPUT_FILE = f"{__file__.replace('.py', '_input.txt')}"
 
 class Point:
@@ -104,7 +103,6 @@ def part2(values):
     print(f"Second part: {dangerous_areas_count}")
 
 def main():
-    values_small = list(get_input(INPUT_FILE_SMALL))
     values = list(get_input(INPUT_FILE))
     part1(values) # First part: 5092
     part2(values) # Second part: 20484

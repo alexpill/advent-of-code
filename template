@@ -1,0 +1,21 @@
+INPUT_FILE = f"{__file__.replace('.py', '_input.txt')}"
+# INPUT_FILE_SMALL = f"{__file__.replace('.py', '_input_small.txt')}"
+
+def get_input(file):
+    with open(file) as f:
+        return f.read().splitlines()
+
+def part1(values):
+    print(f"First part:")
+
+def part2(values):
+    print(f"Second part:")
+
+def main():
+    values = get_input(INPUT_FILE)
+    # values = get_input(INPUT_FILE_SMALL)
+    part1(values) # First part:
+    part2(values) # Second part:
+
+if __name__ == "__main__":
+    main()

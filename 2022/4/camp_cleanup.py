@@ -47,7 +47,7 @@ def main():
     values = get_input(INPUT_FILE)
     # values = get_input(INPUT_FILE_SMALL)
     part1(values) # First part: 496
-    part2(values) # Second part:
+    part2(values) # Second part: 847
 
 if __name__ == "__main__":
     main()

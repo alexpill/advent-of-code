@@ -37,12 +37,12 @@ def compute_new_head_position(last_head, direction):
     return (last_head_x + x_step, last_head_y + y_step)
 
 def compute_new_position(last_pos, new_prev):
-    x_diff = new_prev[0] - last_pos[0]
-    y_diff = new_prev[1] - last_pos[1]
-    if abs(x_diff) <= 1 and abs(y_diff) <= 1:
+    x_delta = new_prev[0] - last_pos[0]
+    y_delta = new_prev[1] - last_pos[1]
+    if abs(x_delta) <= 1 and abs(y_delta) <= 1:
         return (last_pos[0], last_pos[1])
-    x_offset = 1 if x_diff > 0 else -1 if x_diff < 0 else 0
-    y_offset = 1 if y_diff > 0 else -1 if y_diff < 0 else 0
+    x_offset = 1 if x_delta > 0 else -1 if x_delta < 0 else 0
+    y_offset = 1 if y_delta > 0 else -1 if y_delta < 0 else 0
     return (last_pos[0] + x_offset, last_pos[1] + y_offset)
 
 def step_in_direction(positions, direction, rope_length):

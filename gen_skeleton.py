@@ -22,6 +22,10 @@ def fetch_input_values(session_cookie, out_file, day, year):
     with open(f"{year}/{day}/{out_file}_input.txt", "w") as input_file:
         input_file.write(r.text)
 
+def fetch_small_input_values(out_file, day, year):
+    with open(f"{year}/{day}/{out_file}_input_small.txt", "w") as input_file:
+        input_file.write('')
+
 def fetch_problem(day, year):
     input_url = f"https://adventofcode.com/{year}/day/{day}"
     r = rq.get(input_url)
@@ -64,6 +68,7 @@ def main():
 
     if session_cookie is not None:
         fetch_input_values(session_cookie, problem_name, day, year)
+    fetch_small_input_values(problem_name, day, year)
 
     with open("template", "r") as template:
         with open(f"{year}/{day}/{problem_name}.py", "w") as out:

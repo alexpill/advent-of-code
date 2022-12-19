@@ -94,8 +94,8 @@ def part2(values):
 def main():
     values = get_input(INPUT_FILE)
     # values = get_input(INPUT_FILE_SMALL)
-    part1(values) # First part:
-    part2(values) # Second part:
+    part1(values) # First part: 504
+    part2(values) # Second part: 500
 
 if __name__ == "__main__":
     main()

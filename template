@@ -1,5 +1,5 @@
 INPUT_FILE = f"{__file__.replace('.py', '_input.txt')}"
-# INPUT_FILE_SMALL = f"{__file__.replace('.py', '_input_small.txt')}"
+INPUT_FILE_SMALL = f"{__file__.replace('.py', '_input_small.txt')}"
 
 def get_input(file):
     with open(file) as f:

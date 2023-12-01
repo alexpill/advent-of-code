@@ -58,6 +58,8 @@ def part2_variant(values):
     results = []
     for value in values:
         first, end, *other = get_first_and_last_digit(
+            # Because if you have 'twone' it wil be changed to 'twone1one'
+            # then 'two2twone1one'
             value.replace('one', 'one1one')
                 .replace('two', 'two2two')
                 .replace('three', 'three3three')

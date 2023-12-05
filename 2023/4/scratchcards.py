@@ -27,8 +27,8 @@ def part2(raw_values):
     for current_card, (winning_numbers, numbers) in enumerate(values):
         winning_count = len(winning_numbers & numbers)
         if winning_count == 0: continue
-        for i in range(current_card + 1, current_card + winning_count + 1):
-            card_counts[i] += card_counts[current_card]
+        for i in range(winning_count):
+            card_counts[i + 1 + current_card] += card_counts[current_card]
     print(f"Second part: {sum(card_counts)}")
 
 def main():

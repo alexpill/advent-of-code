@@ -30,7 +30,7 @@ def main():
     values = get_input(INPUT_FILE)
     # values = get_input(INPUT_FILE_SMALL)
     part1(values) # First part: 188116424
-    part2(values) # Second part:
+    part2(values) # Second part: 104245808
 
 if __name__ == "__main__":
     main()

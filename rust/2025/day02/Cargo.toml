@@ -1,0 +1,11 @@
+[package]
+name = "aoc202502"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+aoc_utils = { path = "../../aoc_utils" }
+
+[[bin]]
+name = "gift_shop"
+path = "gift_shop.rs"

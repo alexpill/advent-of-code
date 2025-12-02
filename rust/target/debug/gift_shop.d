@@ -1,0 +1,1 @@
+/Users/alex/Code/learning/advent-of-code/rust/target/debug/gift_shop: /Users/alex/Code/learning/advent-of-code/rust/2025/day02/gift_shop.rs /Users/alex/Code/learning/advent-of-code/rust/aoc_utils/src/lib.rs

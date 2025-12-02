@@ -1,0 +1,5 @@
+[package]
+name = "aoc_utils"
+version.workspace = true
+edition.workspace = true
+
